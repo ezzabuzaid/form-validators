@@ -1,8 +1,8 @@
 name: form_validators
-description: A new Flutter package project.
+description: A basic validation for flutter forms.
 version: 0.0.1
-author:
-homepage:
+author: "Ezzabuzaid <ezzabuzaid@hotmail.com>" 
+homepage: https://github.com/ezzabuzaid/form-validators
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

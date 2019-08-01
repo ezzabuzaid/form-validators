@@ -1,5 +1,29 @@
 library form_validators;
 
+/// Check if the field value contain a certain string
+class Contains implements IValidator {
+  final String seed;
+  final String message;
+  @override
+  call(String value) {
+    return !value.contains(this.seed);
+  }
+
+  Contains(this.seed, [this.message = '']);
+}
+
+/// Check if the field value equal to a certain string
+class Equals implements IValidator {
+  final String seed;
+  final String message;
+  @override
+  call(String value) {
+    return this.seed != value;
+  }
+
+  Equals(this.seed, [this.message = '']);
+}
+
 /// Mark the field is required
 class Required implements IValidator {
   final String message;
@@ -9,34 +33,34 @@ class Required implements IValidator {
 
 /// Set the maximum amount of character
 class MaxLength implements IValidator {
-  final int constraint;
+  final int limit;
   final String message;
   call(String value) {
-    if (value.length > this.constraint) {
+    if (value.length > this.limit) {
       return true;
     }
     return false;
   }
 
-  MaxLength(this.constraint, [this.message]);
+  MaxLength(this.limit, [this.message]);
 }
 
 /// Set the minimum amount of character
 class MinLength implements IValidator {
-  final int constraint;
+  final int limit;
   final String message;
   call(String value) {
-    if (value.length < this.constraint) {
+    if (value.length < this.limit) {
       return true;
     }
     return false;
   }
 
-  MinLength(this.constraint, [this.message]);
+  MinLength(this.limit, [this.message]);
 }
 
-/// Make the field digit to be between limited amount of length
-/// it uses MaxLength and MinLength validators
+/// Limit the field digits to be between limited range
+/// it use MaxLength and MinLength validators
 class Between implements IValidator {
   final MinLength minLength;
   final MaxLength maxLength;
@@ -49,13 +73,12 @@ class Between implements IValidator {
     return false;
   }
 
-  Between(this.message, {max, min})
+  Between(this.message, {int max, int min})
       : this.maxLength = MaxLength(max, message),
         this.minLength = MinLength(min, message);
 }
 
-/// Composs mulitple validators into one singular validator
-
+/// Composs multiple validator into one singular validator.
 class Composs implements IValidator {
   final String message;
   final List<IValidator> validators;
@@ -72,7 +95,7 @@ class Composs implements IValidator {
 }
 
 /// Indicate that the field should be an email
-/// It uses a common regexp to validate the string, but you can use own
+/// It uses a common regexp to validate the string, but you can use your own
 class Email implements IValidator {
   final Pattern pattern;
   final String message;
@@ -81,7 +104,7 @@ class Email implements IValidator {
       : this.pattern = Pattern(regexp);
 }
 
-/// Make the field obey to regexp rules
+/// check if the field value matches the pattern
 class Pattern implements IValidator {
   final RegExp regexp;
   final String message;
@@ -89,53 +112,23 @@ class Pattern implements IValidator {
   Pattern(pattern, [this.message = '']) : this.regexp = RegExp(pattern);
 }
 
-/// Check if the field value equal to a certin string
-class Equals implements IValidator {
-  final String password;
-  final String message;
-  @override
-  call(String value) {
-    if (this.password != value) {
-      return true;
-    }
-    return false;
-  }
-
-  Equals(this.password, [this.message = '']);
-}
-
-/// Check if the field value contain a certin string
-class Contains implements IValidator {
-  final String seed;
-  final String message;
-  @override
-  call(String value) {
-    if (value.contains(this.seed)) {
-      return true;
-    }
-    return false;
-  }
-
-  Contains(this.seed, [this.message = '']);
-}
-
 /// An interface used to create a validator class
 /// you can also used to create your own validation class
 /// ```
 /// class CustomClass implements IValidator {
 ///   final String message = 'Message to be used';
-/// 
+///
 ///   you can mark the message prop as optional with [this.message]
 ///   CustomClass(this.message) {
-///   
+///
 ///   }
-///   
+///
 ///   call(String value) {
 ///     should return true;
 ///     return ("if meets my condition") ? false : true;
-///     this means if every thing is good return false, no message needed to display otherwise return true to show the message  
+///     this means if every thing is good return false, no message needed to display otherwise return true to show the message
 ///   }
-///   
+///
 /// }
 /// ```
 class IValidator {
