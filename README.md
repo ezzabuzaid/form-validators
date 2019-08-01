@@ -3,33 +3,14 @@
 
 # Form Validator
 
-  
-
-[![Downloads][downloads-image]][npm-url]
-
-  
-
 A library to validate form fields for Flutter framework
 
-  
 
 **This library only for flutter framework.**
 
-  
-
 to use the JS-based please see [Web form validators](https://github.com/ezzabuzaid/web-validators)
 
-  
-
-## Usage
-
-- Add dependency to your package's `pubspec.yaml`<br></br>form_validators: ^0.0.1
-
-  
-
 ## Contributors
-
-  
 
 **Any help is welcomed**
 
@@ -84,40 +65,6 @@ Validator | Description
   
 
 **Pattern(pattern, [this.message])** | check if the field value matches the pattern.
-
-  
-
-## Example
-
-`import 'package:form_validators:form_validators.dart' as validators;`
-
-  
-
-`
-
-TextFormField(
-
-validator: validators.validate([
-
-validators.Required('This field is required'),
-
-validators.Email('Please enter the email correctly'),
-
-]),
-
-),
-
-`
-
-  
-  
-
-`TextFormField(
-
-validator: validators.validate([validators.Equals( 'myValue', "Passwords doesn't matches",),],),),`
-
-  
-  
 
 ## Contributing
 
