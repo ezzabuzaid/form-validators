@@ -1,6 +1,3 @@
-
-  
-
 # Form Validator
 
 A library to validate form fields for Flutter framework
@@ -10,25 +7,15 @@ A library to validate form fields for Flutter framework
 
 to use the JS-based please see [Web form validators](https://github.com/ezzabuzaid/web-validators)
 
-## Contributors
-
-**Any help is welcomed**
-
-  
-
 ## Validators
 
   
 
 Here is a list of the validators currently available.
 
-  
-
 Validator | Description
 
-  
-
-------------------------------------------------------- | --------------------------------------
+-------------------------------------- | --------------------------------------
 
   
 
@@ -52,15 +39,15 @@ Validator | Description
 
   
 
-**Between(this.message, {int max, int min})** | Limit the field digits to be between limited range<br></br>it use MaxLength and MinLength validators.<br></br> the `message` argument is required here
+**Between(message, {int max, int min})** | Limit the field digits to be between limited range<br></br>it use MaxLength and MinLength validators.<br></br> the `message` argument is required here
 
   
 
-**Composs(this.message, this.validators)** | Composs multiple validator into one singular validator.<br></br> the `message` argument is required here
+**Composs(message, List validators)** | Composs multiple validator into one singular validator.<br></br> the `message` argument is required here
 
   
 
-**Email([this.message, regexp])** | Indicate that the field should be an email<br></br>It uses a common regexp to validate the string, but you can use your own<br></br> the regexp is `r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+"]`
+**Email([message, regexp])** | Indicate that the field should be an email<br></br>It uses a common regexp to validate the string, but you can use your own<br></br> the regexp is `r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+"]`
 
   
 
@@ -68,67 +55,12 @@ Validator | Description
 
 ## Contributing
 
-  
-
-In general, we follow the "fork-and-pull" Git workflow.
-
-  
-
-1. Fork the repo on GitHub
-
-  
-
-2. Clone the project to your own machine
-
-  
-
-3. Work on your fork
-
-  
-
-1. Make your changes and additions
-
-  
-
-2. Change or add tests if needed
-
-  
-
-3. Run tests and make sure they pass (No test yet)
-
-  
-
-4. Add changes to [README.md](http://readme.md/) if needed
-
-  
-
-4. Commit changes to your own branch
-
-  
-
-5.  **Make sure** you merge the latest from "upstream" and resolve conflicts if there is any
-
-  
-
-6. Repeat step 3(3) above
-
-  
-
-7. Push your work back up to your fork
-
-  
-
-8. Submit a Pull request so that we can review your changes
-
-  
+Don't hesitate to open issues and make pull request to help improve this plugin.
 
 ## Maintainers
 
-  
+-  [**ezzabuzaid**](https://github.com/ezzabuzaid) - (author)
 
--  [ **ezzabuzaid**](https://github.com/ezzabuzaid) - (author)
-
-  
 
 ## Made with love
  
