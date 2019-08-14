@@ -52,7 +52,7 @@ The last thing that you can use a 3rd lib to facilitate the process, you can see
 
 	 class IsDate implements IValidator {
 		 final String message = 'Message to be used as error message';
-		 CustomClass(this.message);
+		 IsDate(this.message);
 		 call(String value) {
 			 return isDate(value);
 		}
@@ -76,5 +76,5 @@ Don't hesitate to open issues and make pull request to help improve this plugin.
 https://www.npmjs.com/package/validator
 https://pub.dev/packages/validators
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDcyNDQyNjldfQ==
+eyJoaXN0b3J5IjpbMTYwMTQ5MjcwLC0xMDA3MjQ0MjY5XX0=
 -->
