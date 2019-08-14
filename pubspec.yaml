@@ -1,6 +1,6 @@
 name: form_validators
-description: A basic validation for flutter forms.
-version: 0.0.3
+description: A basic validation interface for flutter forms.
+version: 0.0.4
 author: "Ezzabuzaid <ezzabuzaid@hotmail.com>" 
 homepage: https://github.com/ezzabuzaid/form-validators
 

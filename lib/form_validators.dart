@@ -109,7 +109,7 @@ class Pattern implements IValidator {
   final RegExp regexp;
   final String message;
   call(String value) => !this.regexp.hasMatch(value);
-  Pattern(pattern, [this.message = '']) : this.regexp = RegExp(pattern);
+  Pattern(String regexb, [this.message = '']) : this.regexp = RegExp(regexb);
 }
 
 /// An interface used to create a validator class
