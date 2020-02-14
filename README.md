@@ -72,16 +72,37 @@ Don't hesitate to open issues and make pull request to help improve code
 4.  Push to the branch: `git push origin my-new-feature`
 5.  Submit a pull request :D
 
+## Versioning
+
+This library will be maintained under the semantic versioning guidelines.
+Releases will be numbered with the following format:
+`<major>.<minor>.<patch>`
+For more information on SemVer, please visit http://semver.org.
+
+## Developer
+##### [Ezzabuzaid](mailto:ezzabuzaid@hotmail.com)
+- [Dev.to](https://dev.to/ezzabuzaid)
+- [GitHub](https://github.com/ezzabuzaid)
+- [Linkedin](https://www.linkedin.com/in/ezzabuzaid)
+
+## License
+##### The MIT License (MIT)
+
+## TODO
+- Support transactions
+- Better error handling 
+- Limit collection size
 
 ## Maintainers
  [**ezzabuzaid**](https://github.com/ezzabuzaid) - (author) - ezzabuzaid@hotmail.com
 
-## Made with love
-
 #### This lib inspired by
 https://www.npmjs.com/package/validator
 https://pub.dev/packages/validators
+
+
+##### Built with love <3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTI5NjUyNywxNjAxNDkyNzAsLTEwMD
+eyJoaXN0b3J5IjpbMTA2MzA5MTg3NCwxNjAxNDkyNzAsLTEwMD
 cyNDQyNjldfQ==
 -->
