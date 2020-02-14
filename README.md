@@ -83,7 +83,7 @@ For more information on SemVer, please visit http://semver.org.
 ##### The MIT License (MIT)
 
 ## TODO
-- Support AsyncValidator
+- Support AsyncValidators
 
 ## Developer
 ##### [Ezzabuzaid](mailto:ezzabuzaid@hotmail.com)
@@ -101,6 +101,6 @@ https://pub.dev/packages/validators
 
 ##### Built with love <3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTYzNjg3ODIsMTYwMTQ5MjcwLC0xMD
-A3MjQ0MjY5XX0=
+eyJoaXN0b3J5IjpbMzYzOTIzNTMsMTYwMTQ5MjcwLC0xMDA3Mj
+Q0MjY5XX0=
 -->
