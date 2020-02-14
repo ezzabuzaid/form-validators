@@ -65,7 +65,13 @@ The last thing that you can use a 3rd lib to facilitate the process, you can see
     ]))
 
 ## Contributing
-Don't hesitate to open issues and make pull request to help improve this plugin.
+Don't hesitate to open issues and make pull request to help improve code
+1.  Fork it!
+2.  Create your feature branch: `git checkout -b my-new-feature`
+3.  Commit your changes: `git commit -m 'Add some feature'`
+4.  Push to the branch: `git push origin my-new-feature`
+5.  Submit a pull request :D
+
 
 ## Maintainers
  [**ezzabuzaid**](https://github.com/ezzabuzaid) - (author) - ezzabuzaid@hotmail.com
@@ -76,5 +82,6 @@ Don't hesitate to open issues and make pull request to help improve this plugin.
 https://www.npmjs.com/package/validator
 https://pub.dev/packages/validators
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMTQ5MjcwLC0xMDA3MjQ0MjY5XX0=
+eyJoaXN0b3J5IjpbLTIzMTI5NjUyNywxNjAxNDkyNzAsLTEwMD
+cyNDQyNjldfQ==
 -->
