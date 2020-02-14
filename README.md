@@ -64,26 +64,21 @@ The last thing that you can use a 3rd lib to facilitate the process, you can see
 		    IsDate('Please enter correct date')
     ]))
 
+
 ## Contributing
-Don't hesitate to open issues and make pull request to help improve code
+Don't hesitate to open issues and make a pull request to help improve code
 1.  Fork it!
 2.  Create your feature branch: `git checkout -b my-new-feature`
 3.  Commit your changes: `git commit -m 'Add some feature'`
 4.  Push to the branch: `git push origin my-new-feature`
 5.  Submit a pull request :D
-
+  
 ## Versioning
 
 This library will be maintained under the semantic versioning guidelines.
 Releases will be numbered with the following format:
 `<major>.<minor>.<patch>`
 For more information on SemVer, please visit http://semver.org.
-
-## License
-##### The MIT License (MIT)
-
-## TODO
-- Support for AsyncValidators
 
 ## Developer
 ##### [Ezzabuzaid](mailto:ezzabuzaid@hotmail.com)
@@ -92,15 +87,17 @@ For more information on SemVer, please visit http://semver.org.
 - [Linkedin](https://www.linkedin.com/in/ezzabuzaid)
 
 ## Maintainers
- [**ezzabuzaid**](https://github.com/ezzabuzaid) - (author) - ezzabuzaid@hotmail.com
+ [**Ezzabuzaid**](https://github.com/ezzabuzaid) - (author) - ezzabuzaid@hotmail.com
 
-#### This lib inspired by
-https://www.npmjs.com/package/validator
-https://pub.dev/packages/validators
 
+## License
+##### The MIT License (MIT)
+
+### TODO
+- Add Support for Async validators
 
 ##### Built with love <3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ2NDE4OTYsMTYwMTQ5MjcwLC0xMD
-A3MjQ0MjY5XX0=
+eyJoaXN0b3J5IjpbLTE3NTUyMzY4NDEsLTE3NDQ2NDE4OTYsMT
+YwMTQ5MjcwLC0xMDA3MjQ0MjY5XX0=
 -->
