@@ -79,19 +79,17 @@ Releases will be numbered with the following format:
 `<major>.<minor>.<patch>`
 For more information on SemVer, please visit http://semver.org.
 
+## License
+##### The MIT License (MIT)
+
+## TODO
+- Support AsyncValidator
+
 ## Developer
 ##### [Ezzabuzaid](mailto:ezzabuzaid@hotmail.com)
 - [Dev.to](https://dev.to/ezzabuzaid)
 - [GitHub](https://github.com/ezzabuzaid)
 - [Linkedin](https://www.linkedin.com/in/ezzabuzaid)
-
-## License
-##### The MIT License (MIT)
-
-## TODO
-- Support transactions
-- Better error handling 
-- Limit collection size
 
 ## Maintainers
  [**ezzabuzaid**](https://github.com/ezzabuzaid) - (author) - ezzabuzaid@hotmail.com
@@ -103,6 +101,6 @@ https://pub.dev/packages/validators
 
 ##### Built with love <3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzA5MTg3NCwxNjAxNDkyNzAsLTEwMD
-cyNDQyNjldfQ==
+eyJoaXN0b3J5IjpbLTIxMTYzNjg3ODIsMTYwMTQ5MjcwLC0xMD
+A3MjQ0MjY5XX0=
 -->
