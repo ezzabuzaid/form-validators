@@ -86,10 +86,6 @@ For more information on SemVer, please visit http://semver.org.
 - [GitHub](https://github.com/ezzabuzaid)
 - [Linkedin](https://www.linkedin.com/in/ezzabuzaid)
 
-## Maintainers
- [**Ezzabuzaid**](https://github.com/ezzabuzaid) - (author) - ezzabuzaid@hotmail.com
-
-
 ## License
 ##### The MIT License (MIT)
 
@@ -98,6 +94,6 @@ For more information on SemVer, please visit http://semver.org.
 
 ##### Built with love <3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTUyMzY4NDEsLTE3NDQ2NDE4OTYsMT
-YwMTQ5MjcwLC0xMDA3MjQ0MjY5XX0=
+eyJoaXN0b3J5IjpbMTQ2NjIzNjg5MywtMTc1NTIzNjg0MSwtMT
+c0NDY0MTg5NiwxNjAxNDkyNzAsLTEwMDcyNDQyNjldfQ==
 -->
