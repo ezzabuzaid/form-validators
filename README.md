@@ -1,5 +1,7 @@
 # Form Validator
 
+Don't forget to follow the project's author, [Ezz](https://github.com/ezzabuzaid), and consider starring the project to show your ❤️ and support.
+
 A library to validate form fields for Flutter framework
 
 **This library only for flutter framework.**
@@ -94,6 +96,6 @@ For more information on SemVer, please visit http://semver.org.
 
 ##### Built with love <3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjIzNjg5MywtMTc1NTIzNjg0MSwtMT
-c0NDY0MTg5NiwxNjAxNDkyNzAsLTEwMDcyNDQyNjldfQ==
+eyJoaXN0b3J5IjpbMzUyNDk5MDYsLTE3NTUyMzY4NDEsLTE3ND
+Q2NDE4OTYsMTYwMTQ5MjcwLC0xMDA3MjQ0MjY5XX0=
 -->
