@@ -1,6 +1,6 @@
 name: form_validators
 description: A Set of validators for flutter forms.
-version: 0.2.0
+version: 0.2.1
 homepage: https://github.com/ezzabuzaid/form-validators
 
 environment:
