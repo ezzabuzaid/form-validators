@@ -216,7 +216,7 @@ class CreditCardMonthValidator implements IValidator {
       return true;
     }
 
-    if (!expired(month, year)) {
+    if (expired(month, year)) {
       this.message = this.dateInvalidMessage ?? this.defaultMessage ?? 'Date is invalid';
       return true;
     }
