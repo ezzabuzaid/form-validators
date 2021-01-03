@@ -239,21 +239,42 @@ class CreditCardNumberValidator implements IValidator {
     return value.replaceAll(regExp, '');
   }
 
-  bool luhnCheck(String number) {
-    var sum = int.parse(number[number.length - 1]);
+  bool luhnCheck(String data) {
+    if (data == null || data.length < 2) {
+      return false;
+    }
 
-    for (var i = 0; i < number.length - 1; i++) {
-      var value = int.parse(number[i]);
+    var isDouble = false;
+    var sum = 0;
 
-      if (i % 2 == 0) {
-        value *= 2;
+    // 1. From the rightmost digit and moving left.
+    for (var i = data.length - 1; i >= 0; i--) {
+      final digit = data.codeUnitAt(i) - 48;
+
+      if (digit < 0 || digit > 9) {
+        throw ArgumentError('Digit at index $i must be a number');
       }
 
-      if (value > 9) {
-        value -= 9;
+      // The first digit doubled is the digit located
+      // immediately left of the check digit.
+      if (isDouble) {
+        final doubledDigit = digit * 2;
+        // 2. Take the sum of all the digits.
+        // If the result of this doubling operation
+        // is greater than 9 (e.g., 8 × 2 = 16),
+        // then add the digits of the result.
+        if (doubledDigit > 9) {
+          // sum += doubledDigit ~/ 10 + doubledDigit % 10;
+          sum += doubledDigit - 9;
+        } else {
+          sum += doubledDigit;
+        }
+      } else {
+        sum += digit;
       }
 
-      sum += value;
+      // ...double the value of every second digit.
+      isDouble = !isDouble;
     }
 
     return sum % 10 == 0;
