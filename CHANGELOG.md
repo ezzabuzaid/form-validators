@@ -9,3 +9,8 @@
 ## [0.2.0] - 2020-11-23.
 
 * Add credit card validators
+
+## [0.3.0] - 2020-01-3
+
+* fix(CreditCardNumberValidator): enhance luhnCheck function
+* fix(CreditCardMonthValidator): fix wrong inverse for date expiration check
